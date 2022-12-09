@@ -1,0 +1,38 @@
+﻿@using BulkyBook.Model.ViewModels
+
+@model ShoppingCart;
+
+<div class="col-12 col-md-6 text-end">
+    <table class="table-bordered">
+
+        <thead>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISNB</th>
+            <th>Category</th>
+            <th>CoverType</th>
+
+
+        </thead>
+
+        <tbody>
+
+
+        <td><h1>@Model.Product.Title</h1></td>
+
+
+        <td><h1>@Model.Product.Author</h1></td>
+
+        <td><h1>@Model.Product.ISNB</h1></td>
+
+        <td><h1>@Model.Product.Category.Name</h1></td>
+
+        <td><h1>@Model.Product.CoverType.Name</h1></td>
+
+
+        </tbody>
+        
+
+    </table>
+    
+</div>
